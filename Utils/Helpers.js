@@ -5,7 +5,6 @@ const validarCadena = (valor) => {
     // y que después de quitar los espacios con trim()
     // todavía tenga contenido
     if (typeof valor === 'string' && valor.trim().length > 0) {
-        
         // Si cumple ambas condiciones, la cadena es válida
         return true;
     }
