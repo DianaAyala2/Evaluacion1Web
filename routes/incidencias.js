@@ -4,8 +4,8 @@ const controller = require('../controllers/incidenciasController')
 
 router.post('/incidencias', controller.registrarIncidencia);
 router.get('/incidencias', controller.listarIncidencias);
-router.get('/incidencias', controller.buscarIncidencia);
-router.put('incidencias/:id/estado', controller.cambiarEstado);
+router.get('/incidencias/:id', controller.buscarIncidencia);
+router.put('/incidencias/:id/estado', controller.cambiarEstado);
 router.delete('/incidencias/:id', controller.eliminarIncidencia);
 
 router.get('/incidencias/:id/clasificacion', controller.clasificarPrioridad);
