@@ -1,4 +1,4 @@
-const {generateId, validateIncidencia} = require('.../utils/helpers');
+const {generateId, validateIncidencia} = require('../utils/helpers');
 
 const incidencias = [];
 

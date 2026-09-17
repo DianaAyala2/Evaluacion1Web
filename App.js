@@ -1,7 +1,7 @@
 // Importamos Express para poder crear nuestro servidor
-const express = require("express");
+const express = require('express');
 // Importamos las rutas de las incidencias
-const rutasIncidencias = require("./routes/incidencias");
+const rutasIncidencias = require('./routes/incidencias');
 
 // Creamos nuestra aplicación de Express
 const app = express();
@@ -17,5 +17,5 @@ const PORT = 3000;
 
 // Iniciamos el servidor
 app.listen(PORT, () => {
-    console.log(`Servidor ejecutándose en http://localhost:${PORT}`);
+    console.log(`Servidor ejecutándose en http://localhost:${3000}`);
 });

@@ -2,13 +2,13 @@ const express = require('express');
 const router = express.Router();
 const controller = require('../controllers/incidenciasController')
 
-router.post('/incidencias', controller.registrar);
-router.get('/incidencias', controller.listar);
-router.get('/incidencias', controller.buscarPorId);
+router.post('/incidencias', controller.registrarIncidencia);
+router.get('/incidencias', controller.listarIncidencias);
+router.get('/incidencias', controller.buscarIncidencia);
 router.put('incidencias/:id/estado', controller.cambiarEstado);
-router.delete('/incidencias/:id', controller.eliminar);
+router.delete('/incidencias/:id', controller.eliminarIncidencia);
 
-router.get('/incidencias/:id/clasificacion', controller.clasificacion);
-router.get('/estadisticas', controller.estadisticas);
+router.get('/incidencias/:id/clasificacion', controller.clasificarPrioridad);
+router.get('/estadisticas', controller.obtenerEstadisticas);
 
 module.exports = router;
